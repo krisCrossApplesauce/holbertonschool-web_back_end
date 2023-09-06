@@ -4,4 +4,6 @@ export default function createEmployeesObject(departmentName, employees) {
       ...employees,
     ],
   };
+
+  return obj;
 }
