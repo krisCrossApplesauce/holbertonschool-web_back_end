@@ -1,15 +1,10 @@
 export default function cleanSet(set, startString) {
-  let str = '';
+  if (!startString || startString.length < 1) return '';
   const cleanSet = [...set]
     .filter((x) => x)
     .filter((x) => x.startsWith(startString))
-    .map((x) => x.substring(startString.length));
-  for (const x of cleanSet) {
-    if (str !== '') {
-      str.append('-');
-    }
-    str.append(x);
-  }
+    .map((x) => x.substring(startString.length))
+    .join('-');
 
-  return str;
+  return cleanSet;
 }
