@@ -9,4 +9,6 @@ export default function cleanSet(set, startString) {
     }
     str.append(x);
   }
+
+  return str;
 }
