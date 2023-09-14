@@ -7,9 +7,9 @@ export default function updateUniqueItems(map) {
 
   map.forEach((key, value) => {
     if (value === 1) {
-      updatedMap.set(key) = 100;
+      updatedMap.set(key, 100);
     } else {
-      updatedMap.set(key) = value;
+      updatedMap.set(key, value);
     }
   });
 
